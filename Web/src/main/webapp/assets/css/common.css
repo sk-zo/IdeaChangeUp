@@ -1,0 +1,885 @@
+@charset "utf-8";
+
+/* common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin:0;padding:0;}
+body, th, td, input, select, textarea, button {font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif; font-size:13px}
+em,address {font-style:normal}
+img {border:0px;}
+div, dl, dt, dd, ul, ol, li, form, fieldset, p, button {margin:0; padding:0; border:0; list-style:none; }
+input:focus, textarea:focus, button:focus {outline:none;}
+
+a:link {text-decoration:none}
+a:hover {text-decoration:underline}
+
+header {display:none;visibility:hidden}
+
+.screen_out {display:block; font-size:0; height:1px; left:-9999px; line-height:0; overflow:hidden;  position:absolute; text-indent:-9999px; width:1px}
+.clear { clear:both; }
+.ellipsis { display:block; white-space:nowrap; overflow:hidden; text-overflow: ellipsis; font-size:12px;}
+
+.new_data {position:absolute;left:-1000px;top:-1000px;display:none;}
+
+/* Layout */
+#wrap_v4 {position:relative; background-color:#fff; min-width:1045px}
+#header_v4 {position:relative; width:950px; margin:0 auto; z-index:200}
+#container_v4 {position:relative; width:950px; margin:0 auto 0 auto;text-align:left}
+#container_v4:after{display:block;clear:both;content:''}
+.top_bg_v4 {background: url("/images/v4/common/top_bg_v4.gif") repeat-x scroll 0 0}
+
+/* javaScriptSetting */
+.displayNone{ display: none !important}
+.backgroundNone{ background: none !important}
+
+/* snb */
+#s_snb_v4 {position: relative;  height: 33px;  z-index: 1000;  border-bottom: 1px solid #e2e2e2;  background: #fafafa;}
+#snb_v4 {position:relative; height:33px; z-index:1000; background-color:#fafafa}
+#snb_v4 .snb_m_v4, #s_snb_v4 .snb_m_v4 {width:950px; margin:0 auto; position:relative; text-align:left;}
+
+.snbwrap_m_v4 li {float:left}
+.snbwrap_m_v4  a {display:block; font-size:14px; font-weight:bold; height:33px; letter-spacing:-1px; line-height:43px; text-align:center; background: url("/images/v4/common/snb_sv.gif?v=3") no-repeat scroll 0 0; overflow:hidden; text-indent:-9999px}
+.snbwrap_m_v4 .top_logo {background-position:0 0; width:160px}
+.snbwrap_m_v4 .ser_m2 {background-position:-160px 0; width:75px}
+.snbwrap_m_v4 .ser_m3 {background-position:-235px 0; width:75px}
+.snbwrap_m_v4 .ser_m4 {background-position:-326px 0; width:110px}
+.snbwrap_m_v4 .ser_m5 {background-position:-396px 0; width:73px}
+.snbwrap_m_v4 .on .ser_m2 {background-position:-160px -32px; width:75px; height:34px;}
+.snbwrap_m_v4 .on .ser_m3 {background-position:-235px -32px; width:76px; height:34px;}
+.snbwrap_m_v4 .on .ser_m4 {background-position:-326px -32px; width:110px; height:34px;}
+.snbwrap_m_v4 .on .ser_m5 {background-position:-396px -32px; width:73px; height:34px;}
+
+.snbwrap_v4 {position:absolute; top:6px; right:0; margin:0; font-size:12px;}
+.snbwrap_v4 ul {float:left}
+.snbwrap_v4 li {float:left; font-size:12px; margin:5px 0 0 7px;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.snbwrap_v4 li a, .snbWrap_v4 li a:link, .snbWrap_v4 li a:hover, .snbWrap_v4 li a:visited {color:#606060}
+.snbwrap_v4 .login_v4 {float:left; margin-right:7px;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.snbwrap_v4 .login_v4 strong {display:inline-block; padding:2px 3px 0 0;  vertical-align:bottom; letter-spacing:0; }
+.snbwrap_v4 .login_v4 strong a, .snbwrap_v4 .login_v4 .member {color:#343434; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif; font-weight:normal}
+.snbwrap_v4 .login_v4 .member {display:inline-block; padding:5px 3px 0 0; margin-top:-2px; margin-left:-3px; vertical-align:middle}
+.snbwrap_v4 .login_v4 .btn_log img {vertical-align:middle}
+.snbwrap_v4 .login_v4 img {vertical-align:bottom;max-height: 142px}
+
+/* header */
+.sch_w_v4 {padding-top:34px}
+.ir_wa {display:block; height:100%; overflow:hidden; position:relative; width:100%; z-index:-1;}
+
+.ico_search {background-image: url("/images/v4/doc/doc_sch_v4.gif")}
+.hpsearch_v4 {float:left; position:relative; margin-left:31px; margin-top:1px; width:306px; z-index:999; border:1px solid #c5c5c5}
+.hpsearch_v4 .btn_search {background-position: 0 0; border:0 none; cursor:pointer; float:left; height:39px; overflow:hidden; width:66px; overflow:hidden;text-indent:100%;white-space:nowrap; display:inline-block}
+.hpsearch_v4 .fld_inside {width:306px;height:29px}
+.hpsearch_v4 .fld_inside .tf_keyword {float:left; width:238px; font-size:12px; font-weight:normal; height:18px; line-height:1.5; margin:7px 10px 0; background-color:transparent; border:0 none}
+.hpsearch_v4 .fld_inside .btn_search {background-position:100% 0; height:29px; width:48px;position:absolute;left:100%;top:0;margin-left:-48px;z-index:2;}
+.hpsearch_v4 .fld_inside .bg_on {background: url("/images/v4/doc/doc_sch_v4.gif") no-repeat scroll 0 -42px}
+.focus_v4 {border:1px solid #3d78eb}
+
+/* mypag list 1 */
+.my_area_v4 {clear:both; text-align:left; width:78px; position: absolute; display: block; z-index: 1000; }
+.my_area_v4 ul {padding:8px 6px 2px 7px; border:1px solid #afafaf; background-color:#ffffff;}
+.my_area_v4 li {padding-bottom:3px;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; letter-spacing:-1px; font-size:11px; color:#888;}
+.my_area_v4 li a, .my_area_v4 li a:link, .my_area_v4 li a:visited { font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; letter-spacing:-1px; font-size:11px; color:#888; text-decoration:none;}
+.my_area_v4 li a:hover { font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; letter-spacing:-1px; font-size:11px; color:#888; text-decoration:underline;}
+
+/* footer */
+#footer_v4{clear:both; width:1025px; margin:40px auto 20px auto; border-top:2px solid #495164; font-size:13px; line-height:14px; text-align:center; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif;}
+#footer_v4 ul { display:block; padding:16px 0 26px 0; margin-bottom:14px; border-bottom:1px solid #d7d7d7}
+#footer_v4 li a:link, #footer_v4 li a:hover, #footer_v4 li a:visited {color:#333}
+#footer_v4 ul li {float:left; color:#333; background: url("/images/v4/doc/bu_bar.gif") no-repeat scroll 0 0;  font-size:12px; padding:0 7px 0 10px; white-space:nowrap}
+#footer_v4 ul li.first {background:none; padding-left:5px}
+#footer_v4 .hp_adress {color:#767676; font-size:12px; line-height:20px; text-align:left; padding-left:5px}
+#footer_v4 .hp_adress em {color:#d9d9d9; padding:0 8px; font-size:13px}
+#footer_v4 .hp_adress a {color:#496abc}
+#footer_v4 .hp_adress .link {color:#496abc;cursor:pointer}
+#footer_v4 .txt_copyright {color:#767676; font-size:11px; text-align:left; padding:9px 0 0 5px}
+
+/* autokeyword */
+.autokeyword {clear: both; position: absolute; width:437px!important; top:41px!important; left:-1px; margin-top: -1px; margin-left: 1px;  padding-top:11px; border: 1px solid #a5a6ac; background-color: #fff; z-index: 9999; overflow: hidden;}
+.autokeyword p {padding:5px 0 8px 10px; color:#666; letter-spacing:-0.5px; text-align:left; clear:both; font-size:13px; border-top:1px solid #e1e3e9}
+.autokeyword ul {text-align:left; clear:both; margin-bottom:12px}
+.autokeyword li {overflow: hidden; position: relative; height:28px; line-height:21px; padding:4px 60px 6px 10px; -webkit-box-sizing: border-box; box-sizing: border-box}
+
+.autokeyword li img{vertical-align:middle}
+.autokeyword .autolink strong {color:#496abc; font-weight:normal}
+.autokeyword .autolink {padding-right:25px; text-decoration:none; color:#1b1b1b; font-size:14px; overflow: hidden; white-space:nowrap; text-overflow:ellipsis; display: block}
+.autokeyword li:hover{background:#f0f1f2}
+.autokeyword li.active{background:#f0f1f2}
+.autokeyword .etc {position:absolute; top:3px; right:3px; width:8rem; text-align: right}
+.autokeyword .etc .date { position: absolute; top: 0; right: 34px; font-size:13px; color: #959595; letter-spacing: 0;}
+.autokeyword .bt_item {display: inline-block; width: 32px; vertical-align: top }
+.autokeyword .ico_del {width:11px; height:11px; margin-right:9px; vertical-align:-1px; display: inline-block; overflow: hidden; color: transparent; white-space: nowrap; background: url(/images/v4/main/auto_sch_del.png) 0 0 no-repeat; background-size:11px 11px}
+.sgt_del_w {width:100%; border-top:1px solid #f2f2f2; padding-bottom:10px}
+.sgt_del_w .btn_sgt_del {display:block; width:125px; height:33px; margin:9px auto 0 auto; font-size:13px; color:#666; letter-spacing:-0.5px; border:1px solid #e1e1e1; background-color:#f6f5f6; text-align:center; line-height:34px; text-decoration:none}
+
+.autokeyword .book {float:left; padding-top:3px; padding-left:12px; padding-bottom:15px; overflow:hidden; text-align:left; width:100%; }
+.autokeyword .book img {float:left; margin-right:12px; vertical-align:middle}
+.autokeyword .book dl {line-height:18px;}
+.autokeyword .book dt {overflow:hidden; height:18px; font-size:14px; padding-bottom:5px}
+.autokeyword .book dt a {font-weight:bold; color:#111}
+.autokeyword .book .b_info {padding-bottom:4px;}
+.autokeyword .book .b_info a {color:#6e6e6e;}
+.autokeyword .book .b_db {background: url("/images/v4/main/bul_left_v4.gif") no-repeat 0 5px; padding-left:5px;overflow:hidden;}
+.autokeyword .book .b_db  a {color:#eb4a3f; font-weight:bold; padding-left:3px;}
+.autokeyword .book .thmb {float: left;  width: 54px;  margin-right: 12px;  border: 1px solid #ddd;}
+.autokeyword .book .lmore {font-size: 11px; color:#333; letter-spacing:-1px; text-decoration:underline;  background: url("../../images/v4/theme/th_arrow.gif") no-repeat 42px 5px;overflow:hidden;}
+.autokeyword .book .lmore a {color:#333}
+
+/* search */
+.inner_chek {position:absolute;top:60px;right:180px; color:#b8c6ea; font-size:11px; letter-spacing:-1px}
+.inner_chek label {padding-top:2px; margin-left:2px}
+
+/* data list */
+.lst_data_w {clear:both; display:block; margin-left:11px}
+.lst_data_w li {clear:both; padding-top:20px; width:100%}
+.lst_data_w li:first-child {padding-top:0}
+.lst_data_w dt {overflow:hidden; color:#333; letter-spacing:-0.5px; line-height:20px; font-weight:bold; text-align:left; word-wrap:break-word}
+.lst_data_w dt .im_p {margin-right:4px}
+.lst_data_w dt .tit {width:605px; height:18px; padding-top:2px;}
+.lst_data_w dt .tit a {color:#222; font-size:14px;float:left;}
+.lst_data_w dt .tit a:visited {color:#99209b}
+.lst_data_w img {vertical-align:middle}
+.lst_data_w dl {display:inline}
+.lst_data_w dt span {float:left}
+.lst_data_w dt span.point_icon {float:none;display: inline-block;margin-left:5px;}
+.lst_data_w dt span.point_icon img {vertical-align: middle}
+
+.lst_data_w .doc_info {color:#6e6e6e; margin-top:5px; padding-top:6px; font-size:12px}
+.lst_data_w .doc_info a {color:#6e6e6e}
+.lst_data_w .doc_info em {margin:0 3px 0 6px; color:#ccc;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.lst_data_w .txt_intro {margin:9px 40px 10px 0; line-height:20px; word-wrap:break-word; color:#333; min-height:40px!important; font-size:13px}
+
+.lst_data_w .doc_tag {margin-top:2px; color:#496abc; overflow:hidden; height:43px!important}
+.lst_data_w .doc_tag img {margin-right:6px}
+.lst_data_w .doc_tag a {color:#496abc;}
+.lst_data_w .doc_tag .tag_w {float:left; overflow:hidden; height:43px; line-height:20px; word-wrap:break-word}
+.lst_data_w .doc_tag .tag_w img {float:left; margin-top:2px}
+.lst_data_w .doc_tag .tag_w .t_word {float:left; width:500px; padding-top:2px; font-size:12px}
+.lst_data_w .doc_tag .tag_w .t_word2 {float:left; width:590px; padding-top:2px}
+
+.price_v4 {color:#e54f47}
+.price_v4 strong {font-family:Tahoma,Verdana,Geneva,sans-serif}
+
+/* thumbnail */
+.thumb_v4 {float:left; position:relative; display:inline; margin-right:20px}
+.thumb_v4 img {vertical-align:middle;max-height: 142px;}
+.re_tit {float:left}
+
+a.thmb100x {width:100px;height:138px}
+a.sp_thmb {overflow:hidden;display:table-cell;*display:inline-block; text-align:center; vertical-align: middle; z-index:1}
+a.sp_thmb .thmb_v, a.sp_thmb .thmb_v2{display:inline-block;overflow:hidden;height:100%;vertical-align:middle}
+a.sp_thmb:link, a.sp_thmb:active, a.sp_thmb:visited {border:1px solid #c6c6c6}
+
+.bookMask { width: 100px; height: 136px; border: solid 1px #ccc;display: block;position: absolute; z-index: 50; margin: 1px;top: 0;left: 0; }
+
+.thumb2_v4 {position:relative; width:165px; height:125px;}
+.thumb2_v4 img {vertical-align:middle; max-height: 142px;}
+a.thmb165x {width:165px;height:125px;}
+a.sp_thmb2 {overflow:hidden;display:table-cell;*display:inline-block; text-align:center; vertical-align: middle; z-index:1}
+a.sp_thmb2 .thmb_v, a.sp_thmb2 .thmb_v2{display:inline-block;overflow:hidden;height:100%;vertical-align:middle}
+a.sp_thmb2:link, a.sp_thmb2:active, a.sp_thmb2:visited {border:1px solid #c6c6c6}
+
+/* doc detail portrait thumbnail */
+.thumb3_v4 {position:relative; width:139px;height:108px;}
+.thumb3_v4 img {vertical-align:middle; max-height: 135px;}
+a.thmb139x {width:139px;height:108px;}
+
+.zoom_ov {position:absolute; top:0; left:0; background: url("/images/v4/doc/hover.png") scroll 50% 50%; z-index:99; }
+
+/* page top */
+.page_top {bottom:126px; height:65px; width:50px; left:50%; margin-left:500px; position:fixed;  text-align:center; z-index:99}
+.page_top a {background:url('/images/v4/document/page_top.gif') no-repeat scroll 0 0; display:block; height:50px; width:50px}
+.blind {font-size:0; height:1px; left:0; line-height:0; overflow:hidden; position:absolute; top:0; visibility:hidden; width:1px}
+
+/* preview button */
+.btn_pre_v4 {float:right; vertical-align:top; margin-top:0px}
+.btn_pre_v4 a, .btn_pre_v4 span {background:url("/images/v4/doc/btn_preview_v4.gif") no-repeat scroll 0 0; display:block; width:64px; height:20px; line-height:100px; overflow:hidden; cursor:pointer;}
+.btn_pre_v4 .pre_view {background-position:0 1px; padding-bottom:1px;}
+.btn_pre_v4 .pre_close {background-position:0 -19px; padding-bottom:1px;}
+
+/* preview box */
+.preview_w {clear:both; width:100%; border:1px solid #838791; background-color:#f8f8f8; height:291px; margin-top:30px}
+.preview_con {position:relative; height:280px; font-size:15px; line-height:27px; color:#454545; overflow:auto; margin-left:29px; padding-right:50px}
+.preview_con strong {display:block; position:relative; margin:20px 0 11px 0; color:#333; font-size:16px}
+.preview_con .p_close {position:absolute; top:20px; right:20px}
+.preview_con .p_close a, .preview_con .p_close span {background:url("/images/v4/doc/preview_close.gif") no-repeat scroll 0 0; display:block; width:21px; height:21px; line-height:100px; overflow:hidden; cursor: pointer}
+.preview_con .p_none { margin-top:80px; color:#333; text-align:center; line-height:30px}
+.preview_con .p_none em {font-weight:bold; font-size:16px;}
+.preview_con .p_none p{font-size:14px}
+.preview_con .p_none span {display:block; margin-top:12px}
+.preview_con .p_none a{clear:both;position:relative;top:-10px}
+
+/* sub gallery style */
+.lst_ngall_v4 {clear:both; position:relative; float:left; margin-top:-34px}
+.lst_ngall_v4 img {vertical-align:middle; max-height: 142px;}
+.lst_ngall_v4 li {float:left; width:153px; height:200px; margin:34px 30px 10px 25px}
+.lst_ngall_v4 dt {position:relative; margin-left:25px}
+.lst_ngall_v4 dd {clear:both; overflow:hidden;}
+.lst_ngall_v4 .tit {text-align:center; margin-top:14px; line-height:19px; float:left; width:153px; font-size:13px; letter-spacing:-0.5px}
+.lst_ngall_v4 .tit a, .lst_ngall_v4 .tit a:hover {color:#333}
+.lst_ngall_v4 .tit a:visited {color:#99209b}
+.lst_ngall_v4 .info {padding-top:5px; text-align:center; color:#333; font-size:12px}
+.lst_ngall_v4 .bar {padding:0 3px 0 2px; color:#ccc;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.lst_ngall_v4 em {font-family:Tahoma,Verdana,Geneva,sans-serif}
+.lst_ngall_v4 .page_v4 {color:#6e6e6e}
+
+/* kndata,themeSquare main page */
+.lst_redata_v4 {clear:both; display:block;}
+.lst_redata_v4 img {vertical-align:middle; max-height: 142px;}
+.lst_redata_v4 li {margin-top:30px; width:100%}
+.lst_redata_v4 li:first-child {margin-top:0}
+.lst_redata_v4 dl {display:inline}
+.lst_redata_v4 dt {overflow:hidden; color:#333; font-size:12px; letter-spacing:-1px; line-height:20px; font-weight:bold; text-align:left; word-wrap:break-word}
+.lst_redata_v4 dt .im_p {margin-right:4px}
+.lst_redata_v4 dt span {float:left}
+.lst_redata_v4 dt .tit {width:387px; height:16px; line-height:23px; font-size:13px}
+.lst_redata_v4 dt .tit2 {width:600px; height:16px; line-height:23px}
+.lst_redata_v4 dt .tit3 {width:370px; height:16px; line-height:23px}
+.lst_redata_v4 dt .tit a, .lst_redata_v4 dt .tit2 a {color:#333}
+.lst_redata_v4 dt .tit a:visited, .lst_redata_v4 dt .tit2 a:visited, .lst_redata_v4 dt .tit3 a:visited {color:#99209b}
+.lst_redata_v4 .txt_intro {margin:6px 0 6px 0; line-height:20px; word-wrap:break-word; color:#333; min-height:60px!important}
+.lst_redata_v4 .doc_info {color:#6e6e6e; padding-top:10px; font-size:12px}
+.lst_redata_v4 .doc_info a {color:#6e6e6e}
+.lst_redata_v4 .doc_info em {margin:0 4px; color:#ccc;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.lst_redata_v4 .doc_tag {margin-top:1px; color:#496abc; overflow:hidden; min-height:38px!important}
+.lst_redata_v4 .doc_tag img {margin-right:6px}
+.lst_redata_v4 .doc_tag a {color:#496abc;}
+.lst_redata_v4 .doc_tag a:hover {text-decoration:underline}
+.lst_redata_v4 .doc_tag .tag_w {float:left; overflow:hidden; height:40px; line-height:19px; word-wrap:break-word}
+.lst_redata_v4 .doc_tag .tag_w img {float:left; vertical-align:top; margin-top:2px}
+.lst_redata_v4 .doc_tag .tag_w .t_word {float:left; width:360px; padding-top:2px; font-size:12px }
+.lst_redata_v4 .doc_tag .tag_w .t_word2 {float:left; width:500px; padding-top:2px}
+
+/* old style layer popup */
+.p_copon_event { width:280px; border:5px solid #3c91d1; }
+.p_copon_event .pcon { margin:30px 15px 20px 15px; letter-spacing:-1px; text-align:center;  line-height:16px; color:#000000; }
+.p_copon_event .pcon .des { float:center; width:185px; height:52px; margin-top:5px; margin-left:8px; color:#252525; text-align:left; line-height:18px; }
+.p_copon_event .btn { text-align:center; padding-bottom:20px; }
+
+/* footer email popup */
+.e_mail {width:306px; margin:0 auto; border:1px solid #95a5b0;text-align:left; background-color:#FFFFFF;}
+.e_mail dl{padding:12px 15px;}
+.e_mail dt{ width:270px; border-bottom:1px solid #e6e6e6; font-weight:bold; font-size:12px; font-family:AppleSDGothicNeo-Regular,'돋움',Dotum,appleGothic,sans-serif; color:#303030; padding-bottom:5px;letter-spacing:-1px;}
+.e_mail dd{ width:270px;border-bottom:1px solid #e6e6e6;font-size:12px; font-family:AppleSDGothicNeo-Regular,"돋움",Dotum,appleGothic,sans-serif; color:#555555; line-height:18px; padding:8px 0 10px 0; letter-spacing:-1px;}
+.e_mail p{ padding:0 0 10px 0; text-align:center}
+
+/* 분류 검색어 팝업 */
+.group_word {position:absolute; top:15px; right:0; width:460px; border:1px solid #ccc; background-color:#fffdd9; color:#333; z-index:999}
+.group_word em {font-weight:bold; color:#eb4a3f}
+.group_word p {position:relative; margin:15px 10px 8px 19px; line-height:18px}
+.btn_s_re a {display:inline-block; width:81px; height:24px; line-height:25px; color:#fff; background-color:#6e6e6e; font-family:YDIWebDotum, dotum; font-size:11px; text-align:center; text-decoration:none; vertical-align:top; margin:1px 0 0 11px}
+.btn_g_close {position:absolute; right:4px; top:0; width:15px; height:15px; background:url("/images/v4/doc/btn_noti_close.gif") 0 0 no-repeat scroll; text-indent:-9999; font-size:0}
+
+/* tiket event */
+.funevent {width:452px; height:278px; border:1px solid #acacac; margin:19px auto; padding-top:35px; background:url('/images/pop/2014/fun_ticket_bg.gif') 0 0 repeat}
+.funevent .win {height:81px; line-height:25px; text-align:center; color:#333; font-size:16px}
+.funevent .win strong { color:#eb4e45; font-size:22px}
+.funevent .win2 { display:block; font-size:26px; font-weight:bold; text-align:center; color:#343434; margin:0 auto; width:198px; height:95px; line-height:120px; background:url('/images/v4/member/fun_ticket.png') 0 0 no-repeat}
+.funevent .win2 em {color:#eb4e45; font-weight:bold}
+.funevent .fun_go {color:#fff; display:block; text-decoration:none; width:156px; height:42px; margin:30px auto 0 auto; font-size:14px; text-align:center; line-height:39px; background:url('/images/pay/2015/fun_ticket_btn.gif') 0 0 no-repeat;}
+
+/*
+    poll2015
+    모든 위치 팝업 : 설문조사 사용 [survey150407] #설문종료시 삭제바랍니다.
+*/
+.poll2015 { background: #ffffff; z-index: 99999; border:1px solid #707070; width:410px; padding:26px 0 38px 0}
+.poll2015 strong { margin:16px 0 13px 0; color:#496abc; font-weight:bold; display:block; font-size:22px; letter-spacing:-1px}
+.poll2015 .poll_con { font-size:14px; color:#000; line-height:19px; margin-bottom:29px}
+.poll2015 .pbtn {text-align:center;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.poll2015 .pclose {position:absolute; top:-6px; right:20px}
+.btn_p_w {padding:0 24px; display:inline-block; background-color:#f8f8f8; border:1px solid #c2c2c2; font-size:12px; height:35px; line-height:37px; text-align:center; text-decoration:none; color:#333; font-weight:bold}
+.btn_p_b {padding:0 24px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:12px; height:35px; line-height:37px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px}
+.btn_p_c {padding:0 24px; display:inline-block; background-color:#F00004; border:1px solid #F00004; font-size:12px; height:35px; line-height:37px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px}
+.btn_p_d {padding:0 24px; display:inline-block; background-color:#f8f8f8; border:1px solid #c2c2c2; font-size:12px; height:35px; line-height:37px; text-align:center; text-decoration:none; color:#333; font-weight:bold; letter-spacing:-1px}
+a.btn_p_r {padding:0 24px; display:inline-block; background-color:#e54f47; border:1px solid #c3433c; font-size:12px; height:29px; line-height:32px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px}
+.btn_p_b_s {padding:0 20px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:12px; height:30px; line-height:29px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px;}
+
+/* layer popup */
+.popupFrame {color:#555; background-color:#fff; font-family:"맑은 고딕","Malgun Gothic","Apple SD Gothic Neo","Dotum"}
+.popupFrame h1 {display:block; position:relative;padding:12px 0 0px 20px; background-color:#242d43;font-size:16px; font-weight:bold; color:#e1e1e1; letter-spacing:-1px; line-height:20px; text-align:left}
+.popupFrame span.p_logo {position:absolute; top:10px; right:20px}
+.containerPopup {padding:20px 20px 1px 20px; background:#fff; font-size:13px}
+.p_ntop {height:43px; background-color:#242d43; font-size:16px; font-weight:bold; color:#e1e1e1; letter-spacing:-1px; }
+.p_ntop .ptit {float:left; padding:11px 0 0 0; margin-left:15px;}
+.p_nclose {float:right; width:29px; height:29px; display:block; margin:7px 7px 0 0; background:url('../../images/pop/2014/popup_close.gif') 0 0 no-repeat; overflow:hidden; text-indent:-9999px;}
+.p_doc_down {padding:0 24px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:14px; height:39px; width:230px; line-height:41px; text-align:center; text-decoration:none; color:#ffffff !important; font-weight:bold; letter-spacing:-1px}
+
+.cBtns {text-align: center; margin:10px 0 20px 0;}
+.rBtns {text-align: right; margin:0px 0 5px 0;}
+.cBtns .btn_w {padding:0 12px; display:inline-block; background-color:#fff; border:1px solid #c2c2c2; font-size:12px; height:29px; line-height:32px; text-align:center; text-decoration:none; color:#333}
+.cBtns .btn_b {padding:0 12px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:12px; height:29px; line-height:32px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px}
+
+.daily_close {padding:1px 0 10px 0; background-color:#f8f8f8; border-top:1px solid #d1d1d1; text-align:center; overflow:hidden; line-height:20px;}
+.today_close2 {color:#6e6e6e; letter-spacing:-1px; margin-right:10px; font-size:11px; vertical-align:top; margin-top:10px; display:inline-block; font-size:12px;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.today_close2 input {vertical-align:middle; margin-top:-2px}
+
+/* login_popup */
+.p_login_pop { position:relative; width:387px; padding:35px 0 30px 0; border:1px solid #242d43; background-color:#f5f6f7}
+.p_login_pop img {vertical-align:middle}
+.p_login_pop .p_close { display:block; width:39px; height:39px; text-indent:-9999px; overflow:hidden; position:absolute; right:10px; top:8px; background:url('/images/v4/common/pop_close2.png') 0 0 no-repeat}
+.p_join_cont:after{display:block;clear:both;content:''}
+.p_join_cont .join_tit {font-size:20px; margin-bottom:12px; display:block; color:#333}
+.p_log_box {width:302px; margin:0 auto 0 auto;}
+.p_log_box form {overflow:hidden}
+.p_bg_join {border:1px solid #ccc; background-color:#fff; width:300px; margin-top:1px}
+.p_input_info {display:block;position:relative;height:38px;margin-bottom:5px;font-weight:bold;font-size:14px}
+.p_input_info .tf_g {display:inline;float:left;width:260px;height:28px;padding:0;margin:10px 12px 0 12px;font-weight:bold;font-size:16px;color:#222; border:none}
+.p_input_info .tf_g::-ms-clear {display: none}
+.p_input_info .tf_pw {width:374px}
+.p_input_info .lab_g {position:absolute;top:10px;left:14px;height:24px;color:#999}
+
+.p_find_info {clear:both; display:block; overflow:hidden; margin-top:20px; padding-top:16px; padding-left:8px; border-top:1px solid #e2e2e2;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.p_find_info a {color:#333; text-decoration:none}
+.p_find_info .bar {background:none repeat scroll 0 0 #e1e1e1; display:inline-block; height:12px; margin:0 7px 0 6px; text-indent:-999em; width:1px; vertical-align:middle}
+
+.p_btn_login{clear:both; display:block; height:42px; margin-top:10px; background:#6286de; clear:both}
+.p_btn_login input {width:100%; border:1px solid #5372bd; *border:none; height:42px; background:#6286de; *text-indent:0; -webkit-appearance:none; font-size:18px; color:#fff}
+
+/* checkbox */
+.p_log_check {margin:15px 0 0 3px;}
+.p_log_check{display:block; float:left; width:104px; height:25px; position:relative;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.p_log_check input:checked + label {background-position:0 -28px;  background-color:#f5f6f7}
+.p_log_check input {cursor:pointer; position:absolute; top:0; left:0; height:23px; width:24px}
+.p_log_check label.on {background-position:0 -28px;  background-color:#f5f6f7}
+.p_log_check label {cursor:pointer; position:absolute; top:0; left:0; color:#333; font-size:12px; height:26px; line-height:26px; padding-left:31px; background:url("/images/v4/login/check.png") no-repeat scroll 0 0}
+
+/* 쿠폰 안내 팝업 */
+.popupFrame_n {border:1px solid #242d43; width:385px; position:relative}
+.containerPopup_n {padding:0 18px 0 18px; background:#fff}
+.pop_coupon_txt {font-size:15px; color:#252525; margin-top:34px; margin-bottom:28px;}
+.pop_coupon_txt em {color:#eb4e45; font-weight:bold}
+.pop_coupon_bg {width:349px; height:102px; background:url('/images/pop/2015/pop_coupon_bg.gif') 0 0 no-repeat; margin-top:38px}
+.pop_coupon_bg .pop_coupon {width:242px; height:102px; background:url('/images/pop/2015/pop_coupon.gif') 0 0 no-repeat; margin:0 auto; position:relative}
+.pop_coupon_bg .pop_coupon strong {font-size:40px; font-family:Tahoma, Geneva, sans-serif; color:#eb4e45; position:absolute; top:27px; left:79px}
+.pop_coupon_bg .pop_coupon strong.cou_txt { font-size:28px; line-height:47px; padding-left:3px}
+.pop_coupon_bg .pop_coupon em {font-size:26px}
+.pop_btn_posi {display:inline-block; background-color:#6286de; font-size:12px; height:42px; line-height:45px; text-align:center; text-decoration:none; color:#fff}
+.daily_close_n {text-align:center; overflow:hidden; line-height:20px; margin-bottom:16px}
+.today_close_n {color:#6e6e6e; letter-spacing:-1px; margin-right:10px; font-size:11px; vertical-align:top; margin-top:10px; display:inline-block; font-size:11px;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif;}
+.today_close_n input {vertical-align:middle; margin-top:-4px}
+.popupFrame_n .pclose {position:absolute; top:15px; right:15px}
+#couponInfoPop .cBtns {text-align: center; margin:10px 0 20px 0;}
+
+.ev_pop { position:relative; width:350px; border: 1px solid #8f8f8f; background-color:#fff; box-shadow:0px 0px 6px 2px rgba(0,0,0,0.2)}
+.ev_pop .p_cont {padding:35px 0 33px 0;  text-align:center; color:#111; line-height:24px}
+.ev_pop .p_cont em {color:#eb4e45}
+.ev_pop .p_cont .f_txt {display:block; font-size: 15px; font-weight: bold; line-height: 24px; padding-top: 15px; }
+.ev_pop .p_cont .f_txt2 {font-size:12px;   font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; font-weight:normal; color:#6e6e6e; line-height: 20px;}
+.ev_pop .p_cont .f_txt2 a { color:#6e6e6e}
+.ev_pop .f_btn {margin-top:18px}
+
+/* movie coupon event */
+.btn_movie {padding:0 43px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:14px; height:38px; line-height:37px; text-align:center; text-decoration:none; color:#fff; font-weight:bold}
+.btn_movie_send {position:absolute; right:30px; bottom:14px; display:block; color:#fff; background-color:#fff; border:1px solid #7dadcd; font-size:12px; height:25px; line-height:22px; text-align:center; text-decoration:none; font-weight:normal; border-radius:1px}
+a.btn_movie_send {color:#314a87}
+.ev_movie_txt { position:relative; font-size:14px; font-weight:bold; color:#000; line-height:26px; border:1px solid #cadde1; background-color:#f5fbff; display:block; padding:10px 0 8px 22px; margin-top:10px}
+.ev_movie_txt2 {line-height:22px; display:block; margin-top:25px; margin-bottom:20px}
+.ev_movie_txt3 {color:#333; font-family:dotum}
+.ev_movie_msg {padding:12px 0 11px 0; margin:7px 25px 15px 25px; font-weight:bold;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; font-size:12px; background-color:#efefef}
+.ev_movie_msg input {height:27px; width:150px; border:1px solid #c1c1c1; padding-left:7px}
+
+/* 방송대 팝업 */
+#knouPop.gifty_pop .pclose {position:absolute; top:15px; right:15px}
+#knouPop.gifty_pop { position:relative; width:390px; border: 1px solid #8f8f8f; font-family:AppleSDGothicNeo-Regular,"Dotum"; box-shadow:0px 0px 6px 2px rgba(0,0,0,0.2)}
+#knouPop.gifty_pop .p_cont {padding:40px 0 10px 0;  text-align:center; color:#111; line-height:20px; color:#333}
+#knouPop.gifty_pop .p_cont em {color:#eb4e45}
+#knouPop.gifty_pop .f_btn {margin-top:18px}
+#knouPop.gifty_pop .g_noti { display:block; margin-bottom:17px; font-size:17px; color:#000; font-weight:bold; text-decoration:underline}
+#knouPop.gifty_pop .g_img {height:100px; margin:25px 0 13px 0}
+#knouPop .btn_p_gift {padding:0 43px; display:inline-block; background-color:#e54f47; border:1px solid #c3433c; font-size:14px; height:38px; line-height:37px; text-align:center; text-decoration:none; color:#fff; font-weight:bold}
+#knouPop.gifty_pop .g_ev_date {font-size:14px; font-weight:bold; margin-bottom:27px; letter-spacing:-1px}
+#knouPop.gifty_pop .g_ev_date em{color:#eb4a3f}
+#knouPop .down_poll {border:1px solid #d8d8d8; background-color:#f7f7f7; padding-top:17px; margin-bottom:20px; line-height:18px}
+#knouPop .down_poll strong {color:#496abc; font-weight:bold; display:block; font-size:14px; letter-spacing:-1px; margin:0 0 7px 25px}
+
+/* funcampus 설문 팝업*/
+.pop_gify_d .gifty_buy_tit { display:block; margin:0 0 7px 0; font-size:14px; font-weight:bold; letter-spacing:-1px; }
+.pop_gify_d {width:700px; background:#fff}
+.pop_gify_d .pcon { padding:20px 25px 20px 25px; text-align:left; color:#252525;}
+.pop_gify_d .pcon #surveyContent{ background-color: transparent; border: 0 none; font-size: 15px; padding: 10px; line-height:22px; width: 580px; height: 80px; line-height: 18px; scrollbar-arrow-color:#fff; }
+.pop_gify_d .pop_gify_tit { font-size:17px; letter-spacing:-1px; margin-bottom:25px; display:block; border-bottom:2px solid #ccc; padding:0 0 7px 0}
+.pop_gify_d .pbottom { clear:both; height:47px; text-align:center; margin-bottom:15px}
+
+.pop_gify_d .gify_buy_com {text-align:center; padding:15px 0 35px 0; line-height:35px}
+.pop_gify_d .gify_buy_com .com_txt {font-size:17px; font-weight:bold}
+.pop_gify_d .gify_buy_com .com_txt em {color:#eb4e45}
+
+.pop_gify_d .btn_g_buy { display:inline-block; width:220px; padding:9px 0 13px 0; font-size:17px; line-height:18px; letter-spacing:-0.5px; text-align:center; cursor:pointer; border:1px solid transparent; border-radius:4px; color:#fff; background-color:#e54f47; border:1px #c3433c solid; font-weight:bold}
+
+.close_top {top: 0px; left: 646px;  text-align: center;  z-index: 100;  position: absolute;}
+.close_top a {background: url("/images/pop/2015/pop_sk_close.png") no-repeat scroll 0 0;  display: block;  height: 54px;  width: 54px;}
+
+/*모바일 버전 버튼*/
+.btn_m {clear:both; padding:30px 50px}
+.btn_m_txt {width:100%; display:block; overflow: hidden;  padding: 25px 0 22px 0;  border: 3px solid #abaeb4; border-radius: 12px;  font-size:52px; line-height: normal; color:#222; text-align:center; text-decoration:none; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#edeef1)); background-image: -moz-linear-gradient(top, #fff, #edeef1);background-image: -o-linear-gradient(top, #fff, #edeef1);background-image: linear-gradient(to bottom, #fff, #edeef1);}
+.btn_m_n {clear:both; padding:30px 0; width:100%; text-align:center; background-color:#efefef}
+
+/* 다운로드 알림 */
+.down_alarm_w {height:46px; width:100%; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:1000; margin-bottom:-3px; position:relative}
+.down_alarm {width:100%;  background-color:#fffccb; height:46px;}
+.down_alarm .alarm_txt {width:950px; margin:0 auto; padding-top:8px; text-align:center; font-size:14px; color:#000}
+.down_alarm .alarm_txt em { color:#e54f47; font-weight:bold}
+.down_alarm .alarm_txt img {vertical-align:middle; margin-right:9px; margin-top:-3px}
+.down_alarm .alarm_txt .btn_doc_down { display:inline-block; vertical-align:middle; width:66px; height:28px; font-size:12px; line-height:30px; border:1px solid #d7d7d7;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; color:#000; border-radius:3px; text-align:center; margin-left:21px}
+.down_alarm .alarm_txt .btn_doc_down:hover { border:1px solid #bdbdbd; text-decoration:none}
+.down_alarm .alarm_txt .txt_info { vertical-align:top; display:inline-block; margin-top:5px;}
+
+/* customer project */
+/*.cstm_contents_w {background: url("/images/event/cstm_bg.png") repeat-x;  background-position: left top; background-size: cover; padding:0 10px 30px 10px }*/
+/*.cstm_contents{position: relative; }*/
+/*.cstm_tit {padding-top:45px; text-align:center;  }*/
+/*.cstm_tit p{padding-bottom:5px; font-size:31px;  line-height:38px; font-weight:600; text-align:center; color:#fff;  letter-spacing: -0.5px;}*/
+/*.cstm_tit p em {color:#ffc400;}*/
+/*.cstm_text {text-align:center; color:#e5e5e5; letter-spacing: -0.5px; font-size:15px; line-height:21px; padding:25px 0 30px}*/
+/*.cstm_text .y_t {color:#fff; font-size:17px; line-height:24px; padding-top:15px}*/
+/*.cstm_text .y_t em {color:#ffc400}*/
+/*.cstm_text2 {text-align:center; color:#fff; letter-spacing: -0.5px; font-size:17px; line-height:24px; padding:30px 0 30px}*/
+/*.cstm_poll {padding:0 0 25px 0; color:#fff}*/
+/*.cstm_poll .txt1 {margin:0 0 13px 0; text-align:center; display:block; font-size:18px; letter-spacing:-0.5px; color:#ffc400}*/
+/*.cstm_poll  li { font-size:15px; padding-bottom:5px; padding-left:10px}*/
+
+/* 콕포인트 */
+#docDownloadPopup{z-index: 10000;}
+#docDownloadPopup .popupFrame {color:#333}
+#docDownloadPopup .popupFrame h1.ptit {display:block; position:relative;padding:12px 0 0px 20px; height: 32px; background-color:#242d43;font-size:16px; font-weight:bold; color:#e1e1e1; letter-spacing:-1px; line-height:20px; text-align:left}
+#docDownloadPopup .popupFrame span.p_logo {position:absolute; top:10px; right:20px}
+#docDownloadPopup .containerPopup {padding:20px 20px 0 20px; background:#fff }
+#docDownloadPopup .cBtns {text-align: center; margin:10px 0 20px 0;}
+#docDownloadPopup .rBtns {text-align: right; margin:0px 0 5px 0;}
+#docDownloadPopup .down_comt {text-align:center; line-height:20px}
+#docDownloadPopup .down_comt span {display:block;}
+#docDownloadPopup .p_nclose {float:right; width:29px; height:29px; display:block; margin:7px 7px 0 0; overflow:hidden; text-indent:-9999px;position: absolute;right: 0;top: 0;}
+#docDownloadPopup .p_my_account {border:1px solid #ddd; padding:13px 0 10px 0; margin-bottom:12px; margin-top:10px; border-radius:4px; text-align:center}
+#docDownloadPopup .p_my_account .p_account_id {padding-right:7px; margin-right:0}
+
+#docDownloadPopup .price_list {overflow:auto; overflow-x:hidden;}
+#docDownloadPopup .price_list th { padding:10px 15px 5px 15px; font-size:12px; background-color:#ededed; color:#555; text-align:center; }
+#docDownloadPopup .price_list td { padding:8px 15px 4px 15px; color:#333; font-size:12px; line-height:18px; background-color:#ffffff; text-align:left;}
+
+/*콕서비스*/
+#docDownloadPopup .btn_down_w {padding:0 16px; display:inline-block; background-color:#eb4a3f; border:1px solid #eb4a3f; border-radius:5px; font-size:15px; height:43px; line-height:42px; text-align:center; text-decoration:none; color:#fff}
+#docDownloadPopup .btn_down_w:hover {background-color:#c83f36; border:1px solid #c83f36}
+#docDownloadPopup .btn_down_b {padding:0 16px; display:inline-block; background-color:#257dea; border:1px solid #257dea; border-radius:5px; font-size:15px; height:43px; line-height:42px; text-align:center; text-decoration:none; color:#fff}
+#docDownloadPopup .btn_down_b:hover {background-color:#1f6ac7; border:1px solid #1f6ac7}
+#docDownloadPopup .p_point_down {text-align:center; color:#252525; padding:23px 0 4px 0; font-size:14px; font-weight:bold; letter-spacing:-1px}
+#docDownloadPopup .btn_fun_w {padding:0 12px; display:inline-block; background-color:#fff; border:1px solid #c2c2c2; font-size:12px; height:29px; line-height:32px; text-align:center; text-decoration:none; color:#333}
+#docDownloadPopup .btn_fun_b {padding:0 12px; display:inline-block; background-color:#6286de; border:1px solid #5372bd; font-size:12px; height:29px; line-height:32px; text-align:center; text-decoration:none; color:#fff; font-weight:bold; letter-spacing:-1px}
+
+#v3Doc table{ border-collapse: collapse;}
+#v3Doc tr th,
+#v3Doc tr td{border: 1px solid #bcbcbc; padding: 10px;}
+
+/*콕포인트 유도 팝업*/
+.point_info_pop {z-index:9999; background:url("/images/v4/document/point_info_bg.png") no-repeat 0 0}
+.point_info_cont { position:relative; margin:109px 0 0}
+.point_info_cont span {display:block}
+.point_info_cont .info_txt1 { font-size:28px; color:#ea002c; text-align:center; line-height:34px}
+.point_info_cont .info_txt2 {margin:35px 0 10px 77px; font-size:13px; color:#000; line-height:20px}
+.point_info_cont .info_txt2 em {display:block; padding-bottom:6px; font-size:17px; font-weight:bold; color:#0369e7}
+.point_info_cont .info_txt2 .txt2_link {margin-top:8px}
+.point_info_cont .info_txt2 .txt2_link a {color:#6e6e6e; text-decoration:underline}
+.point_info_close {font-size:0; position:absolute; right:27px; top:0; display:block; width:29px; height:29px; background:url("/images/v4/document/point_info_close.gif") no-repeat 0 0}
+.today_close_w { position:relative; height:29px; margin:24px 11px 0 0}
+.today_close {position:absolute; right:75px; top:7px; color:#6e6e6e}
+.today_close input {vertical-align:-1px}
+.dmm {display:none; height:100%; left:0; position:absolute; top:0; width:100%; z-index:2000; background-color:#000; opacity:0.65; filter:alpha(opacity=65); -ms-filter:alpha(opacity=65);}
+
+/* customer project */
+.cstm_contents_w {margin:10px auto 50px auto; width: 950px;}
+.cstm_contents{position: relative; border:1px solid #d6d6d6; width:948px;}
+.cstm_tit {padding-top:70px; text-align:center;  }
+.cstm_tit p{padding-bottom:5px; font-size:52px;  line-height:61px; text-align:center; color:#fff;  letter-spacing: -3px;}
+.cstm_tit p em {color:#191919; font-weight:bold}
+.cstm_text {text-align:center; color:#5f6061; font-size:21px; line-height:23px; padding:10px 0 50px}
+.cstm_text .y_t {color:#fff; font-size:17px; line-height:24px; padding-top:15px}
+.cstm_text .y_t em {color:#ffc400}
+.cstm_text2 {text-align:center; color:#fff; letter-spacing: -0.5px; font-size:17px; line-height:24px; padding:30px 0 30px}
+.cstm_poll {font-size:17px; line-height:27px; padding:0 70px 40px;  color:#191919; background: url("/images/survey/cstm_top_bg.gif") repeat scroll 0 0;  }
+.cstm_poll .box {background:#fff; border-radius:3px; padding:35px; border:1px #d6d6d6 solid}
+.cstm_poll .txt1 {margin:0 0 20px 0; text-align:left; display:block; font-size:24px; letter-spacing:-0.5px; color:#191919}
+.cstm_poll  li { font-size:19px; padding:5px 0; padding-left:30px}
+.cstm_btn_b {display:inline-block; margin-top:40px; background-color:#e93427; border:1px solid #e93427; border-radius:3px; padding:0 100px; font-size:23px; height:60px; line-height:60px; text-align:center; text-decoration:none; color:#fff; font-weight:bold}
+.cstm_btn_h {display:inline-block; margin-top:40px; background-color:#6286de; border:1px solid #4e6bb2; border-radius:3px; padding:0 100px; font-size:23px; height:60px; line-height:60px; text-align:center; text-decoration:none; color:#fff; font-weight:bold}
+.cstm_sub{position: relative; border:1px solid #d6d6d6; width:948px;  background: url("/images/survey/cstm_top_bg2.gif") repeat scroll 0 0;  }
+
+.down_file label { margin-right:10px}
+
+/* 쪽지기능 */
+.pop_messege {position:relative; border:1px solid #8f8f8f; box-shadow:2px 2px 6px 1px rgba(0,0,0,0.17)}
+.msg_point_tit {margin:30px 0 0 25px; padding-left:27px; font-size:18px; color:#222; background:url("/images/pop/2016/ico_msg.gif") no-repeat 0 3px;}
+.msg_point_lst {clear:both; color:#333; background:#fff; margin:12px 22px 0 22px; border-top:2px solid #495164}
+.msg_point_lst th {color:#333; font-size:11px; height:32px; font-weight:normal; background-color:#f8f8f8}
+.msg_point_lst td {height:35px; line-height:20px; background-color:#fff; text-align:center}
+.msg_point_lst a {color:#333; text-decoration:none}
+.msg_point_lst a:hover {color:#333; text-decoration:underline}
+.msg_point_lst td.read .s_tit {color:#6e6e6e}
+.msg_point_lst td .s_tit {float:left; width:340px; height:18px; margin:3px 5px 0 7px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; text-align:left; color:#3054c8}
+.msg_point_lst td.po_date {font-size:11px; color:#6e6e6e}
+.msg_point_lst .btn_msg_del {display:block; float:right; margin-right:10px; width:30px; height:20px; line-height:22px; font-size:11px; color:#6e6e6e; border:1px solid #dbdbdb; letter-spacing:-1px; text-align:center; text-decoration:none}
+.msg_point_lst a.btn_msg_del {text-decoration:none; color:#6e6e6e}
+.pop_messege .btn_msg_w {position:absolute; bottom:25px; width:100%}
+.pop_messege .btn_msg_w span {display:block; margin:0 auto; text-align:center}
+.pop_messege .btn_msg_close {display:inline-block; width:70px; height:34px; margin:0 auto; font-weight:bold; line-height:36px; font-size:12px; color:#333; border:1px solid #ccc; text-align:center; text-decoration:none}
+.pop_messege .btn_msg_answer {display:inline-block; width:90px; height:34px; margin:0 auto; font-weight:bold; line-height:36px; font-size:12px; color:#fff; border:1px solid #5372bd; background-color:#6286de; text-align:center; text-decoration:none}
+.msg_detail_view {clear:both; color:#333; background:#fff; margin:10px 22px 0 22px}
+.msg_detail_view .msg_get {clear:both; height:148px; margin-bottom:13px; line-height:20px; padding:15px; overflow:auto; background-color:#f3f6fd; border:1px solid #dfe3ea}
+.msg_detail_view .text_area {background-color:#fff; margin-bottom:8px; padding-left:16px; padding-top:8px; position:relative; border:1px solid #aaa}
+.msg_detail_view .text_area::after {clear:both; content: ""; display:block;}
+.msg_detail_view  textarea {background-color:#fff;  border:medium none; color:#333; display:block; float:left; font-size:12px; height:110px; line-height:18px; margin:0; overflow-x:hidden; overflow-y: auto; padding:2px 0 0; position:relative; resize:none; vertical-align:top; width:100%; z-index:1;}
+.msg_detail_view .cbox_guide {border:medium none; bottom:5px; color:#959595; cursor:default; font-size:12px; left:16px; line-height:18px; overflow:hidden; position:absolute; top:12px; z-index:10}
+.msg_detail_view .msg_com_txt {margin-top:130px; margin-bottom:15px; font-size:16px; text-align:center; line-height:27px; font-weight:bold}
+.msg_detail_view .msg_send_box {clear:both; height:148px; margin-bottom:15px; line-height:20px; padding:15px 15px 15px 7px; overflow:auto; background-color:#fff; border-top:1px solid #ccc; border-bottom:1px solid #ccc}
+.msg_detail_view .msg_send_box strong, .msg_detail_view .msg_get strong {display:block; color:#3054c8}
+.msg_detail_view .msg_send_box .send_txt {margin-top:15px; padding-top:15px; background:url("/images/pop/2016/msg_dot.gif") repeat-x 0 top}
+.msg_detail_view .send_txt2 {font-size:11px; color:#555; letter-spacing:-0.5px}
+.msg_detail_view .send_txt2 em {color:#f2471f}
+.msg_detail_view .send_txt2 a {text-decoration:none}
+.msg_detail_view .send_txt2 a:hover {text-decoration:underline}
+
+/* 콕포인트 가이드 팝업*/
+.pop_guide {z-index:1605; position:absolute; left:50%; margin-left: -226px; top:15%; text-align:left}
+.po_guide_con.pline {border:1px solid #b5b5b5}
+.po_guide_con {position:relative; width:430px; border-radius:15px; background-color:#fff; overflow:hidden; line-height:19px; box-shadow:2px 2px 10px rgba(0,0,0,0.2)}
+.po_guide_con .guide_tit {font-size:18px; font-weight:bold; color:#000; text-align:center; padding-bottom:19px; text-decoration:underline; letter-spacing:-1px}
+.po_guide_con .guide_info {font-size:12px; color:#333; padding:37px 25px 25px 25px}
+.po_guide_con .guide_info dt {color:#111; font-weight:bold; padding-bottom:4px; font-size:12px}
+.po_guide_con .guide_info dd {margin-bottom:14px; position:relative}
+.po_guide_con .guide_info .g_a, .po_guide_con .guide_info .g_b {float:left; font-size:13px; font-weight:bold; width:16px; height:16px; display:inline-block; text-align:center; line-height:17px; margin-right:2px;}
+.po_guide_con .guide_info .g_a {color:#547ee5}
+.po_guide_con .guide_info .g_b {color:#ff4732}
+.po_guide_con .guide_info span {overflow:hidden; display:block}
+.po_guide_con .guide_info_t {text-align:center; color:#333; border-top:1px solid #ddd; border-right:1px solid #ddd; margin-top:7px; position:relative}
+.po_guide_con .guide_info_t td, .po_guide_con .guide_info_t th {border-left:1px solid #ddd; border-bottom:1px solid #ddd; padding:3px 0}
+.po_guide_con .guide_info_t th {background-color:#f1f1f1; padding:3px 0 4px 0}
+.po_guide_con .btn_guide_close {position:absolute; right:22px; top:18px; display:block; width:25px; height:25px; overflow:hidden; text-indent:100%; white-space:nowrap; background:url(/images/v4/document/pop_giude_close.gif) 0 0 no-repeat}
+
+/* 광고상품 미리보기*/
+.pre_premium {position:relative; border:1px solid #ccc; }
+.pre_premium dt a {color:#002cbb; text-decoration:underline; font-size:13px; font-family:AppleSDGothicNeo-Regular,gulim;}
+.pre_premium strong a{color:#218d44;}
+.lst_thmb{overflow:hidden;clear:both;padding-bottom:10px;padding-top:5px;}
+.lst_thmb .thmb{width:77px;margin-right:15px; clear:both; border:1px solid #ddd;font-size:0}
+.lst_thmb .cont{float:left;width:77px; text-align:left}
+.lst_thmb dl{overflow:hidden;clear:both;width:100%;padding-bottom:5px;color:#555;line-height:19px}
+.lst_thmb dt {float:left;width:77px;}
+.lst_thmb dt a {font-size:12px; font-weight:normal; text-align:center; color:#555; text-decoration:none; padding-top:5px}
+.lst_thmb dd{float:left;width:77px; font-size:11px; color:#999}
+.lst_thmb dd em{color:#e1e1e1}
+.lst_thmb p{line-height:19px}
+.hp_info {color:#666; margin-top:7px}
+
+/* 공통팝업 */
+.pop_common_box {width:300px; padding-bottom:20px; position:relative; border:1px solid #8f8f8f; box-shadow:2px 2px 5px 2px rgba(0,0,0,0.15);}
+.pop_common_box .pcon {margin:35px 15px 20px 15px; text-align:center; line-height:16px; color:#252525}
+.pop_common_box .g_noti {display:block; margin:0 0 17px 0; font-size:17px; color:#1064bd; font-weight:bold; text-decoration:underline}
+
+/* 판매자추천 아이콘 */
+.ico_prim_default {background: url("/images/v4/search/ico_prim_default.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:57px; height:19px; text-indent:-9999px}
+.ico_prim_a1 {background: url("/images/v4/search/ico_prim_a1.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.ico_prim_a2 {background: url("/images/v4/search/ico_prim_a2.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.ico_prim_a3 {background: url("/images/v4/search/ico_prim_a3.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.ico_prim_b1 {background: url("/images/v4/search/ico_prim_b1.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.ico_prim_b2 {background: url("/images/v4/search/ico_prim_b2.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.ico_prim_b3 {background: url("/images/v4/search/ico_prim_b3.gif") no-repeat 0 0 transparent; position: absolute; top:5px; left:5px; width:92px; height:21px; text-indent:-9999px}
+.prim_light {background:#fffddf}
+.prim_icon {padding-left:5px}
+
+/* 펀 고객센터 팝업 */
+.fun_cs_layer {position:absolute; top:30px; left:50%; width:200px; margin-left:275px; border:1px solid #ccc; background-color:#fffdd9; color:#333; z-index:999}
+.fun_cs_layer em {font-weight:bold; color:#eb4a3f}
+.fun_cs_layer p {position:relative; margin:13px 10px 8px; line-height:20px; text-align:center;}
+.btn_cs_close {position:absolute; right:0px; top:0; width:15px; height:15px; background:url("/images/v4/doc/btn_noti_close.gif") 0 0 no-repeat scroll; text-indent:-9999; font-size:0}
+
+/* 전화전 팝업 */
+.p_faq_w {border:2px solid #868a95; width:800px}
+.p_faq_tit {padding:0 0 12px 7px; color:#303540; font-size:37px; border-bottom:2px solid #383d48; font-weight:500;text-align:left;}
+.p_faq_lst {border-bottom:2px solid #383d48}
+.p_faq_lst li {display:block; border-top:1px solid #eaeaea; position:relative}
+.p_faq_lst .lnk_faq {display:inline-block; position:relative; width:670px; padding:14px 10px 16px 8px; font-size:16px; color:#000; text-decoration:none; font-weight:300}
+.p_faq_lst .lnk_faq:hover {text-decoration:underline}
+.p_faq_lst .p_btn_view {position:absolute; right:12px; top:17px; width:25px; height:25px; background-position:0 0}
+.p_faq_lst .on .p_btn_view {background-position:-40px 0}
+.p_btn_view {overflow:hidden; display:block; background: url(/images/pop/2017/p_btn_faq.gif) no-repeat; text-indent:-9999px}
+.p_faq_cont {padding:20px; background-color:#f8f8f8; border-top:1px solid #eaeaea; font-size:13px; color:#2f2f2f; line-height:23px}
+/* .p_faq_cont img { max-width:804px; width: expression(this.width > 804 ? 804: true); height: auto; } */
+.p_cs_time {padding:15px 15px 16px 15px; margin-top:20px; font-size:14px; line-height:23px; font-weight:300; color:#222; background-color:#f1f4fc; border:1px solid #edf1f8}
+.p_cs_cont {display:inline-block; margin-left:25px;text-align:left;}
+.p_cs_cont .p_cs_txt {display:block; margin-bottom:8px}
+.p_cs_cont .p_cs_txt em {color:#ee4a3f; font-weight:400}
+.p_cs_cont a {color:#0066cc; font-weight:400; text-decoration:underline}
+.p_cs_cont .p_cs_txt2 {margin-top:15px; font-size:13px; line-height:21px}
+.p_cs_cont .p_cs_txt2 a {font-size:14px}
+.p_faq_btn {text-align:center; margin-top:15px}
+.p_faq_btn .p_fap_close {display:inline-block; width:80px; height:35px; line-height:33px; text-align:center; color:#444; font-size:14px; font-weight:400; text-decoration:none; border:1px solid #ccc; border-radius:3px}
+.p_faq_btn .p_fap_print {display:inline-block; width:80px; height:35px; line-height:33px; text-align:center; color:#fff; font-size:14px; font-weight:400; text-decoration:none; background-color:#6286de; border:1px solid #5372bd; border-radius:3px; margin-right:4px}
+
+/* 구매자료 문서저장소 이동 */
+.pop_cloud_ad {z-index:1200; width:763px; height:800px; background: url("/images/v4/document/pop_cloud.png") 0 0 no-repeat}
+.pop_cloud_ad .ad_inner {background-color:#dcfaf7; width:654px; margin:489px 0 0 53px}
+.pop_cloud_ad .ad_inner .ad_list {margin-left:125px; padding:25px 25px 29px 66px; font-weight:300; background:url("/images/v4/document/pop_cloud_ico.gif") 0 29px no-repeat}
+.pop_cloud_ad .ad_inner .ad_list dt {font-size:16px; color:#000; padding-bottom:9px}
+.pop_cloud_ad .ad_inner .ad_list dd {font-size:13px; color:#6e6e6e; line-height:18px; margin-left:-5px}
+.pop_cloud_ad .cloud_go_save {width:280px; height:63px; display:block; background-color:#31313d; border:1px solid #31313d; text-align:center; color:#e5e5e5; font-size:18px; line-height:62px; margin:41px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.pop_cloud_ad .cloud_go_save:hover {background-color:#22222b}
+.pop_cloud_ad .cloud_go_close {width:48px; height:48px; position:absolute; top:45px; right:45px; background: url("/images/v4/document/pop_cloud_close.gif") 0 0 no-repeat}
+
+/* 등급업 이벤트 */
+.pop_grade_ev {z-index:1200; width:763px; height:830px; background:url("/images/event/sellerGradeUpEvent/pop_event_bg.png") 0 0 no-repeat}
+.pop_grade_ev .p_grade_tit {text-align:center; margin:62px 0 33px 0}
+.pop_grade_ev .p_grade_con {font-size:16px; color:#555; text-align:center; line-height:26px; letter-spacing:-0.5px}
+.pop_grade_ev .p_grade_con p {color:#222; margin-bottom:12px; font-size:18px}
+.pop_grade_ev .grade_txt {color:#b94f4e; }
+.pop_grade_ev .grade_txt2 {color:#ff7e00}
+.pop_grade_ev .grade_txt3 {color:#838383;}
+.pop_grade_ev .ad_inner {background-color:#f2f2f4; width:700px; margin:35px auto 0 auto; padding-bottom:20px; font-size:13px; color:#555; line-height:22px}
+.pop_grade_ev .ad_inner ul {padding:25px 0 10px 36px}
+.pop_grade_ev .ad_inner li {margin-bottom:8px}
+.pop_grade_ev .ad_inner span {float:left; display:block; width:85px; color:#000}
+.pop_grade_ev .ad_inner p {display:block; overflow:hidden}
+.pop_grade_ev .p_grade_noti {background-color:#fdfdfd; margin:0 20px; padding:15px 0 15px 18px}
+.pop_grade_ev .p_grade_noti span {width:73px; color:#e5330a}
+.pop_grade_ev .cloud_go_save {width:280px; height:63px; display:block; background-color:#31313d; border:1px solid #31313d; text-align:center; color:#e5e5e5; font-size:18px; line-height:62px; margin:22px auto 0 auto; border-radius:32px; text-decoration:none}
+.pop_grade_ev .cloud_go_save:hover {background-color:#22222b}
+.pop_grade_ev .cloud_go_close {width:48px; height:48px; position:absolute; top:45px; right:45px; font-size:0; background: url("/images/event/sellerGradeUpEvent/pop_cloud_close.gif") 0 0 no-repeat}
+
+/* 방통대 할인쿠폰 발급 팝업 */
+.pop_knou_coupon {position:relative; display:block; width:290px; height:339px; background-image:url("/images/event/pop_knou_coupon.png"); background-repeat:no-repeat; background-size:290px 339px}
+.pop_knou_coupon .btn { position:absolute; top:260px; left:42px; border:1px solid #e93427; display:block; width:200px; height:40px; line-height:40px; font-size:17px; color:#e93427; text-align:center}
+
+/* 해피캠퍼스 할인쿠폰 발급 팝업 */
+.pop_hp_coupon {position:relative; display:block; width:290px; height:339px; background-image:url("/images/event/pop_hp_coupon.png"); background-repeat:no-repeat; background-size:290px 339px}
+.pop_hp_coupon .btn { position:absolute; top:260px; left:42px; border:1px solid #e93427; display:block; width:200px; height:40px; line-height:40px; font-size:17px; color:#e93427; text-align:center}
+
+/* 자료요청도우미 */
+.inoti_banner {margin:10px 0 0 5px;}
+.inoti {position:relative; z-index:1200; width:730px; height:470px; margin:40px 0 0 7px; text-align:center; border:1px solid #31313d; background:#fcfcfc; border-radius:4px}
+.inoti .p_inoti_tit {text-align:center; margin:55px 0 27px 0}
+.inoti .btn_ok {width:130px; height:50px; display:inline-block; background-color:#31313d; border:1px solid #31313d; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.inoti .btn_ok:hover {background-color:#22222b}
+.inoti .btn_cancle {width:130px; height:50px; display:inline-block; background-color:#c3c3c3; border:1px solid #c3c3c3; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.inoti .btn_cancle:hover {background-color:#b3b3b3}
+.inoti .cloud_go_close {width:40px; height:40px; position:absolute; top:20px; right:35px; font-size:0; background: url("/images/v4/document/pop_cloud_close.gif") -4px -4px no-repeat}
+.inoti .eva_inner {background-color:#fff; width:650px; margin:15px auto 0 auto; padding:20px 0; text-align:center; font-size:18px; font-weight:300; color:#232323; line-height:21px}
+.inoti .eva_txt {margin:18px 0 10px;  border: 1px solid #c2c2c2;  width:570px;  height: 80px;  color: #333;  font-size: 18px;  vertical-align: middle;  padding:10px;  line-height: 19px}
+
+.pop_inoti {z-index:1200; width:641px; height:495px; text-align:center; background:url("/images/pop/2017/pop_inoti_bg.png") 0 0 no-repeat}
+.pop_inoti .p_inoti_tit {text-align:center; margin:55px 0 27px 0}
+.pop_inoti .btn_ok {width:130px; height:50px; display:inline-block; background-color:#31313d; border:1px solid #31313d; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.pop_inoti .btn_ok:hover {background-color:#22222b}
+.pop_inoti .btn_cancle {width:130px; height:50px; display:inline-block; background-color:#c3c3c3; border:1px solid #c3c3c3; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.pop_inoti .btn_cancle:hover {background-color:#b3b3b3}
+.pop_inoti .cloud_go_close {width:40px; height:40px; position:absolute; top:20px; right:35px; font-size:0; background: url("/images/v4/document/pop_cloud_close.gif") -4px -4px no-repeat}
+.pop_inoti .eva_inner {letter-spacing:-0.5px; background-color:#f2f2f4; width:550px; margin:15px auto 10px auto; padding:20px 0; text-align:center; font-size:18px; font-weight:300; color:#232323; line-height:21px}
+.pop_inoti .eva_txt {margin:18px 0 10px; border:1px solid #c2c2c2; width:450px; height:80px; color:#333; font-size:17px; vertical-align: middle;  padding:10px; line-height:24px}
+
+.pop_inoti2 {z-index:1200; width:668px; height:595px; text-align:center; background:url("/images/pop/2017/pop_inoti_event.png") 0 0 no-repeat}
+.pop_inoti2 .p_inoti_tit {text-align:center; margin:20px 0 20px 0}
+.pop_inoti2 .btn_ok {width:210px; height:50px; display:inline-block; background-color:#e95347; border:1px solid #e95347; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.pop_inoti2 .btn_ok:hover {background-color:#d94438}
+.pop_inoti2 .btn_cancle {width:110px; height:50px; display:inline-block; background-color:#31313d; border:1px solid #31313d; text-align:center; color:#fff; font-size:18px; line-height:52px; margin:20px auto 0 auto; border-radius:32px; font-weight:300; text-decoration:none}
+.pop_inoti2 .btn_cancle:hover {background-color:#22222b}
+.pop_inoti2 .cloud_go_close {width:44px; height:44px; position:absolute; top:20px; right:35px; font-size:0; background: url("/images/v4/document/event_upload_close.png") 0 0 no-repeat}
+.pop_inoti2 .eva_inner {margin:5px auto 10px auto; text-align:center; font-size:15px; font-weight:300; color:#232323; line-height:21px}
+
+/* 설문조사 팝업 */
+.p_poll_wrap {width:570px; height:535px}
+.p_poll_wrap .poll_bg { position:relative; width:570px; height:535px}
+.p_poll_wrap .poll_bg .poll_textarea {position:absolute; top:292px; left:58px; width:433px; height:74px; overflow:auto; background-color:#f3f3f3; border:1px solid #c8c8c8; padding:10px; font-size:15px; color:#555}
+
+/* 고객만족도 설문 */
+.evaluation_w {padding:35px 0 0 0; clear:both; display:block}
+.evaluation {clear:both; margin:0 0 5px 0; width:100%; border:1px solid #e9e9e9; background-color:#fafafa; overflow:hidden;}
+.evaluation .common_ev_tit {font-size:13px; color:#7c838c; font-weight:normal; line-height:19px; display:block; float:left; padding:16px 12px 17px 47px; margin:10px 0 10px 29px; border-right:1px solid #e9e9e9; background:url("/images/v4/common/ico_evaluation.gif") 0 22px no-repeat; letter-spacing:-1px}
+.evaluation .common_ev_msg {float:left; margin-left:15px; width:77%}
+.evaluation .common_ev_msg p {font-size:13px; color:#444; padding:12px 0 7px 0; letter-spacing:-1px}
+.evaluation .common_ev_msg textarea {height:37px; padding:3px 15px 0 5px; width:83%; border:1px solid #d9d9d9; vertical-align:top; font-size:13px; overflow:auto;}
+.evaluation .common_ev_msg .ev_in_btn {height:42px; width:68px; text-align:center; font-size:11px; color:#fff; background-color:#abadb0;  font-family:AppleSDGothicNeo-Regular,dotum,"돋움",sans-serif; letter-spacing:-1px; display:inline-block; text-decoration:none; vertical-align:top; margin-left:-1px; line-height:46px}
+.evaluation .common_ev_msg p.txt_noti {font-size:12px; margin-top:0!important; line-height:17px; padding-bottom:10px; color:#959595}
+.evaluation .common_ev_msg p.txt_noti span {color:#666}
+
+.evaluation .common_ev_msg :-ms-input-placeholder {font-size:12px; letter-spacing:-1px;color:#999}
+.evaluation .common_ev_msg ::-webkit-input-placeholder {font-size:12px; letter-spacing:-1px;color:#999}
+.evaluation .common_ev_msg ::-moz-placeholder {font-size:12px; letter-spacing:-1px; color:#999}
+
+
+/* 구매평가 팝업 */
+.p_ntop .ptit2 {float:left;  font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif; padding:11px 0 0 0; margin-left:15px;}
+.pop_comt_tit { margin:5px 0 15px 10px; font-size:15px; font-weight: bold; letter-spacing: -1px; color:#000; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif}
+.pop_comt_tit img {vertical-align:-1px; margin-right:1px; line-height: 23px}
+.pop_ev_tip {position:absolute; z-index:100; top:6px; left:50px; background-color:#fefce8; border-radius:5px; width:387px; border:1px solid #d3d1bf}
+.pop_ev_tip .arw {position: absolute; top:-1px; left:-13px; width:20px; height:17px; background:url(/images/v4/common/sp_usertrans.png) no-repeat 0 0}
+.pop_ev_tip .desc {padding:9px 10px 10px 18px; color: #333; line-height:21px; font-size:13px; white-space: nowrap;letter-spacing: -0.7px;font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif; position: relative}
+.pop_ev_tip .coupon_img { position: absolute; right:17px; bottom:12px }
+.pop_score {margin-top: 20px}
+.pop_score .score_tit {font-size:15px; color: #000; letter-spacing: -1px; display: block; padding:10px 0 7px 3px;font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif}
+.pop_score .score_num_w {background-color:#f4f4f4; border: 1px solid #dadada;  padding:15px 15px 25px 15px}
+.pop_score .score_num {font-size: 24px; font-weight: bold; color: #eb4e45; margin-bottom:10px; padding-left:5px;font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif;  }
+.pop_score .score_num input {width:20px; height: 20px; vertical-align:-2px}
+.pop_score .score_num em {margin-right: 13px}
+.score_notice {font-size:11px; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif; letter-spacing:-1px; color:#777; padding-top: 10px}
+.pop_comt_in {float:left; border:1px solid #9A9A9A; width: 340px; height: 58px; color:#000; font-size: 13px; vertical-align: middle; padding:5px;line-height:20px; overflow:auto}
+.pop_btn_ok {display:block; float:left; height:68px; width:70px; line-height:70px; margin-left:3px; font-size:13px; color:#fff; text-align: center; background-color: #6286de; border:1px solid #5372bd; letter-spacing: -0.5px; vertical-align:0; font-weight: bold}
+.pop_btn_ok:hover {text-decoration: none}
+.btn_score_b { padding: 0 12px; display: inline-block; background-color: #6286de; border: 1px solid #5372bd; font-size: 12px; height: 29px; line-height: 32px; text-align: center; text-decoration: none; color: #fff; font-weight: bold; letter-spacing: -1px; }
+.btn_score_w { padding: 0 12px; display: inline-block; background-color: #fff; border: 1px solid #c2c2c2; font-size: 12px; height: 29px; line-height: 32px; text-align: center; text-decoration: none; color: #333; }
+
+/* 구매평가 포인트  20200422 */
+.opinion_point_icon em {padding-right:2px}
+.opinion_point_icon.g_aa {color:#eb4a3f}
+.opinion_point_icon.g_a {color:#5279d6}
+.opinion_point_icon.g_b {color:#2ba4ba}
+.opinion_point_icon.g_c {color:#6a9b3a}
+.opinion_point_icon.g_d {color:#7f8889}
+
+/* header 20200526 */
+#header {position:relative; width:100%; margin:0 auto; z-index:200; background-color:#fff}
+#wrap_snb {width:100%; height:36px; background-color:#f6f6f6;  font-family:"Helvetica Neue", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "돋움", dotum, sans-serif }
+#wrap_snb .inner {position: relative; width:1025px; height:38px; margin: 0 auto}
+.snb_lst {float:right; padding:10px 0 0 0}
+.snb_lst a {color:#606060}
+.snb_lst ul {float:left}
+.snb_lst li {float:left; font-size:12px; color:#666; letter-spacing:-0.5px; padding:0 10px 0 9px; background:url(/images/v4/common/snb_line.gif) no-repeat right 3px}
+.snb_lst li:last-child {background:none; padding-right:0}
+.mem_top_id {letter-spacing:0; color:#111; display: inline-block; margin-top:-1px}
+.mem_top_id em {letter-spacing:-1px; font-weight:normal; margin-left:4px; margin-right:2px; color:#666}
+.mem_top_id img {vertical-align:-1px; margin-right:3px}
+.hp_service {float:left; padding:10px 0 0 0; font-size:13px}
+.hp_service li {float:left; padding:0 11px 0 10px; letter-spacing:-0.5px; color:#333; background:url(/images/v4/common/snb_line.gif) no-repeat right 4px}
+.hp_service a {color:#333}
+.hp_service li:first-child {padding-left:0}
+.hp_service li:last-child {background:none; padding-right:0}
+.hp_gnb {width:100%; height:43px; position:relative; clear:both; background-color:#496abc}
+.sch_area {position:relative; width:1025px; height:78px; margin:0 auto}
+.hp_logo {position: relative; left:0; top:15px}
+/* .hp_logo a {display:block} */
+
+#header .search_area_n {position: absolute; top:18px; left:221px}
+#header .search_area_n .box_searchbar {width:435px; height:38px; border: 2px solid #496dc7}
+#header .search_area_n .tf_keyword {float:left; width:385px; height:37px; font-size:18px; font-weight:600; margin:0 0 0 7px; background-color:transparent; border:0 none; color:#000}
+#header .search_area_n .search_btn {position:absolute; top:0; right:0; bottom:0; width:45px; background-color: #496dc7}
+#header .search_area_n .ico_search_submit {display: inline-block; width:45px; height:42px; background: url("/images/v4/common/btn_header_sch.png") 0 0 no-repeat}
+
+.my_menu {position: absolute; right:0; top:10px; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif!important}
+.my_menu li {float:left; position:relative}
+.my_menu .gnb_icon {display:block; background: url("/images/v4/common/gnb_icon.gif") 0 0 no-repeat}
+.my_profile {padding:5px 0 0 0; margin-right:7px }
+.my_profile .gnb_mem_pic {width:32px; height:32px; position:relative; display: block; font-size: 0; vertical-align: middle; margin: 0 auto 4px auto}
+.my_profile .gnb_mem_pic:after {position:absolute; top:0; left:0; right:0; bottom:0; z-index:1; border:1px solid #000; border-radius:50%; opacity:0.2; content: ''; }
+.my_profile img {vertical-align:top; border-radius:16px}
+#gnb_profile_img {width:32px!important; height:32px!important}
+.my_noti {padding:13px 20px 0 20px; margin:0 5px 0 6px}
+.my_noti .gnb_icon {width:22px; height:23px; margin-bottom:5px; background-position:0 -1px}
+.my_cart {padding:13px 1px 0 10px}
+.my_cart .gnb_icon {width:33px; height:24px; margin-bottom:4px; background-position:-59px 0}
+.my_menu a {display: block; font-size:12px; color:#333; font-weight:normal; letter-spacing:-0.7px; text-decoration:none!important; text-align: center}
+.my_menu .my_noti a .cnt, .my_menu .my_cart a .cnt {display: block; position: absolute; top:3px; left:31px; padding:2px 6px 3px 5px; border-radius: 15px; background: #ff537c; font-weight:700; font-size:12px; line-height:12px; color: #fff; text-align:center; border:1px solid #fa3867}
+.my_menu .my_noti a .cnt {left:31px}
+.my_menu:hover {text-decoration:none}
+
+/* sns 간편로그인 아이콘 */
+.ico_id {vertical-align:1px}
+.ico_id img {margin-right:3px; vertical-align:-4px}
+
+/* 20210628 판매자구분 아이콘 */
+.m_st {display:inline-block; font-size:11px; padding:1px 5px 0 5px; margin: 0 1px; height:17px; border-radius:2px; color:#f1f4fb; text-align:center; font-weight: normal; letter-spacing:-0.5px}
+.m_st.p_ico {background-color: #7490d4}
+.m_st.b_ico {background-color: #5e62a4}
+.m_st.c_ico {background-color: #52bed8}
+.my_ico_info {width:16px; height:16px; background:url("/images/v4/mypage/ico_info.png") no-repeat 0 0; display: inline-block; vertical-align:middle; margin-left:3px; margin-top:-1px}
+
+/* 판매등급 팝업 */
+.pop_mem_n {width:410px; height:388px; letter-spacing:-0.5px; padding-right:15px; margin-left:0px; color: #333; font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif}
+.pop_mem_n .np_tit {font-weight: bold; color: #000; font-size:15px; letter-spacing: -1px; margin-bottom:5px}
+.pop_mem_n .txt1 {line-height:20px; margin-bottom:13px; font-size:13px; padding-left:5px}
+.pop_mem_n .txt1 strong {display: block; color: #000; padding-bottom:2px; font-size:13px; word-spacing:-1px}
+.pop_mem_n .txt1 em {color:#eb4e45}
+.pop_mem_n .mem_level_t {border:1px solid #ccc; margin-right:7px; padding:9px 0 8px 0; margin-top:-5px; margin-bottom:16px; background-color:#f8f8f8 }
+.pop_mem_n .mem_level_t td {text-align: center; font-weight: bold}
+.pop_mem_n .mem_level_t td span {display: block; font-size:12px; padding-top:5px}
+.pop_mem_n .link_mem_det {display:block; color:#3565c9; font-size:12px; word-spacing:-1px; text-align:right; margin:-18px 5px 6px 0}
+.pop_mem_n.scroll {overflow-x: hidden; overflow-y: scroll; overflow: auto; scrollbar-3dlight-color: #B4B4B4; scrollbar-arrow-color: #333; scrollbar-base-color: #FCFCFC; scrollbar-darkshadow-color: #FFF; scrollbar-face-color: #EDEDED; scrollbar-highlight-color: #FFF; scrollbar-shadow-color: #B4B4B4;}
+.btn_plevel_close { padding: 0 12px; display: inline-block; background-color: #fff; border: 1px solid #c2c2c2; font-size: 12px; height: 29px; line-height:29px; text-align: center; text-decoration: none; color: #333; }
+
+/* footer sns link */
+#footer_v4 .list_sns {position:absolute; right:10px; top:55px; padding: 0; border-bottom:none}
+#footer_v4 .list_sns li {padding:0;background: none;}
+#footer_v4 .list_sns .link_sns {display:block; width:30px; height:30px; margin-left:10px; vertical-align:top}
+#footer_v4 .list_sns .link_sns img {vertical-align:top; max-width:100%}
+
+.search_sgt_w {width:100%; width:100%; z-index:1602}
+.search_sgt {position:relative; border-radius:4px; background-color:#fff; overflow:hidden; margin:15px; padding:0; font-family:'Malgun Gothic','맑은 고딕',sans-serif}
+.sgt_area {position:relative; width:100%; height:43px; text-align:left}
+.sgt_area .link_pre { position:absolute; top:0; left:0; display:inline-block; width:40px; height:40px; background-position:13px 12px}
+.sgt_area .txt_hp {display:none; height:100%; overflow:hidden; visibility:hidden; width:100%}
+
+.sgt_form {position:relative; margin:0 0 0 46px; vertical-align:top; margin-right:5px}
+.sgt_form .box_in {background-color:#fff; height:27px; overflow: hidden; padding: 7px 37px 8px 0;}
+.sgt_form .box_in .sgt_keyword {background-color: transparent; border:0; outline: transparent; color:#000; font-size:15px; height:30px; line-height:20px; vertical-align:top; width:100%; -webkit-appearance: none; text-overflow: ellipsis}
+.sgt_form .box_in .sgt_btn {cursor:pointer; font-size:0; width:37px; height:41px; line-height:0; position:absolute; right:0; top:0;}
+.sgt_imsc {overflow:hidden; background-image:url(/images/head_img_v4.png?v=2); background-repeat:no-repeat; background-size:50px auto}
+.sch_ico {width:21px; height:21px; background-position:1px 2px; display:block; margin-left:3px;}
+
+.sgt_lst li {border-top:1px solid #f2f2f2; position:relative}
+.sgt_lst .link_suggest {display:block; overflow:hidden; height:41px; padding:0 40px 0 46px; font-size:15px; line-height:2.94; color:#403f4e; white-space:nowrap; text-overflow: ellipsis}
+.sgt_lst .link_suggest em {color:#496abc}
+.sgt_lst .btn_delword {position:absolute; top:0px; right:0px; width:44px; height:41px; font-size:0; line-height:1; background-position:11px -22px}
+.sgt_lst .sgt_date {position:absolute; top:12px; right:47px; font-size:13px; color:#a1a1a1}
+.sgt_del_w {width:100%; border-top:1px solid #f2f2f2; padding-bottom:22px}
+.sgt_del_w .btn_sgt_del {display:block; width:125px; height:33px; margin:9px auto 0 auto; font-size:13px; color:#666; letter-spacing:-0.5px; border:1px solid #e1e1e1; background-color:#f6f5f6; text-align:center; line-height:34px; text-decoration:none;}
+
+.btn_reset {background:rgba(0, 0, 0, 0) none repeat scroll 0 0; border:0 none; font-size:0; height:41px; line-height:0;  position:absolute; right:36px; top:0; width:30px;}
+.btn_reset .ico_del { background-position:7px -22px; display:block; float:left; height:41px; width:30px;}
+
+.banner_roll_pager {position: absolute; right:10px; bottom:15px; width:100%; height:10px; text-align: right;z-index: 20;}
+.banner_roll_pager a{background-image: url(/images/v4/main/top_banner_page.png); background-repeat: no-repeat; background-size: auto;	-webkit-background-size: auto;}
+.banner_roll_pager a {overflow: hidden; width:10px; height:10px; padding:1px; background-position:0 0; vertical-align: top; display: inline-block !important; line-height:9999px;margin-right:5px;}
+.banner_roll_pager a.on {background-position:-14px 0}
+
+
+/* 자료문의 팝업 */
+.containerPopup_my {font-family:AppleSDGothicNeo-Regular,"Malgun Gothic","맑은 고딕",dotum,"돋움",sans-serif}
+.remy_txt .banking {margin:19px 17px 15px 19px}
+.remy_txt .banking li {padding:0 0 3px 9px; color:#555; line-height:20px; font-size:13px; letter-spacing: -0.5px }
+.remy_txt .banking .rx_bull {margin:0 0px 0 -12px; font-weight:bold; font-size:13px}
+.remy_txt .banking a {color:#3565c9; text-decoration: underline}
+.opinion_area {clear:both; margin:0 15px; border-top:1px #dadada solid; border-bottom:1px #dadada solid; overflow: hidden; padding-bottom:15px; background-color:#eee}
+.opinion_area .opinion_doc {font-size:13px; font-weight:bold; letter-spacing:-0.5px; line-height: 20px; color:#333; margin:10px}
+.opinion_area .opinion_doc img {vertical-align:-2px }
+.opinion_area .consul_input {clear:both; border:1px solid #ccc; padding:10px; background-color: #fff; margin:0 10px  }
+.opinion_area .consul_input textarea {display:block; width:100%; border:0; font-size:13px; line-height:19px; background-color: #fff; line-height:22px; color: #000}
+.opinion_area .consul_input .txt_num {display: block; text-align: right; font-weight: bold; color: #959595; font-size:12px; margin:2px 2px -3px 0}
+.opinion_area .consul_input .txt_num em {color: #222}
+
+/* 20220217 파워링크 */
+.power_light {background:#f3f6fe}
+
+/* 20220426 노하우톡 알림 */
+.pop_talk_noti {position:relative; width:255px; border-radius:6px; box-shadow:2px 2px 2px rgba(0,0,0,0.2)}
+.pop_talk_noti .p_noti_tit {position: relative; height:40px; font-size:13px; font-weight:bold; color:#fff; letter-spacing:-1px; border-top-left-radius:6px; border-top-right-radius:6px; background-color:#584de4}
+.pop_talk_noti .p_noti_tit .txt {height:26px; display:inline-block; padding-left:38px; margin:7px 0 0 15px; line-height:28px; background:url("/images/v4/mypage/kh_talk_ico2.png") no-repeat 0 0}
+.pop_talk_noti .p_noti_tit .ico_add {display:inline-block; width:17px; height:17px; margin-left:5px; vertical-align:-3.5px; background:url(/images/v4/mypage/ico_kh_add.png) 0 0 no-repeat}
+.pop_talk_noti .p_noti_tit .p_close {position: absolute; right:10px; top:11px; display: block; width: 20px; height: 20px; font-size:0; background:url(/images/v4/mypage/btn_pop_close2.png) 4px 3px no-repeat; opacity:0.6}
+.pop_talk_noti .noti_det {height:149px; border-bottom-left-radius:6px; border-bottom-right-radius:6px; border:1px solid #969aa6; border-top:none; letter-spacing:-0.5px;}
+.pop_talk_noti .noti_det .det {display:block; height:88px; text-align: center; line-height:24px; padding-top:16px; color:#000; font-size:14px}
+.pop_talk_noti .noti_det .det em {font-weight: bold; color: #2d60e1}
+.pop_talk_noti .p_bot_btn { text-align: center}
+.pop_talk_noti .p_bot_btn a {width:118px; height:31px; margin:0 1px; line-height:30px; font-size:12px; color:#3565c9; letter-spacing:-1px; word-spacing:-1.5px; display: inline-block; text-align:center; box-sizing: border-box; border: 1px solid #a1b7e6; text-decoration: none; border-radius:2px}
+
+.pop_talk_add {font-size:13px; letter-spacing:-0.5px; width:253px; height:182px; z-index:1000; position: absolute; top:1px; left:1px; border-radius:6px; background-color: #fff}
+.pop_talk_add p {position:relative; padding:35px 19px 17px 20px; line-height:23px}
+.pop_talk_add p b {color: #3c2fdc}
+.pop_talk_add .add_close {position: absolute; right:10px; top:12px; display: block; width: 20px; height: 20px; font-size:0; background:url(/images/v4/mypage/btn_pop_close.png) 4px 3px no-repeat}
+
+/* 20220519 퀵메뉴 */
+.quickmenu{position:fixed; bottom:35px;width:70px;text-align:center; right:40px; z-index:500}
+.quickmenu.doc-detail {bottom:100px;}
+.quickmenu .qmenu {width:62px; margin:0 auto; padding:0}
+.quickmenu ul {margin:0; padding:0}
+.quickmenu li {position:relative;width:62px; height:62px; border-radius:62px; margin-bottom:10px; box-shadow: rgba(0, 0, 0, 0.10) 2px 2px 3px;}
+.quickmenu li.question:hover .quickmenu-item {width:200px;border-radius:62px; background-color:#f7f9fa}
+.quickmenu li.question:hover span {top:13px; left:35px;opacity:1}
+.quickmenu li .quickmenu-item,.quickmenu li .quickmenu-item *{transition:all .2s;-webkit-transition:all .2s;-ms-transition:all .2s}
+.quickmenu li .quickmenu-item {overflow:hidden;display:block;border-radius:62px; box-shadow: 0 0 0 1px #ccd2d3 inset;}
+.quickmenu li .icon,.quickmenu li .quickmenu-item {position:absolute;top:0;right:0;width:62px;height:62px;}
+.quickmenu li .icon {display:inline-block;z-index:10;background-repeat:no-repeat;background-position:50% 50%}
+.quickmenu li span {display:block;position:absolute;top:10px;left:65px;z-index:9;max-width:100px;color:#333;font-size:14px;text-align:left;opacity:0; letter-spacing:-1px; word-spacing:-1px; font-weight: bold}
+.quickmenu li span em {font-size:12px; display: block; padding-top:3px; word-spacing:-1.5px; letter-spacing:0; color:#6e6e6e; font-weight: normal}
+.quickmenu li strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-bottom:5px;color:inherit;font-size:inherit;font-weight:inherit}
+.quickmenu .qmenu li.question .icon{background:url(/images/v4/common/quick_m2.png) 0 0 no-repeat}
+.quickmenu .qmenu li.charge .icon{background:url(/images/v4/common/quick_m1.png) 0 0 no-repeat}
